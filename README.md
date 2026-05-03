@@ -1,8 +1,8 @@
-CC104–Parking-Lot-Management-System
+****CC104–Parking-Lot-Management-System
 
 Final Project for CC104: Data Structure and Algorithms
 Overview
-
+**
 This is a console-based application developed in C for the CC104 Final Project. It simulates a backend management system for a parking facility, allowing users to register and authenticate accounts, park vehicles, manage waiting queues when the parking is full, process vehicle exits with automated billing, and maintain a history of completed transactions.
 
 Data Structures & Algorithms Used

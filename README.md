@@ -1,59 +1,51 @@
-****CC104–Parking-Lot-Management-System
+# Parking Lot Management System
 
-Final Project for CC104: Data Structure and Algorithms
-Overview
-**
-This is a console-based application developed in C for the CC104 Final Project. It simulates a backend management system for a parking facility, allowing users to register and authenticate accounts, park vehicles, manage waiting queues when the parking is full, process vehicle exits with automated billing, and maintain a history of completed transactions.
+Final Project for CC104: Data Structures and Algorithms
 
-Data Structures & Algorithms Used
+---
+
+## Overview
+
+This is a console-based application developed in C for the CC104 Final Project. It simulates a parking lot management system where users can register vehicles, assign parking slots, process vehicle exits, and maintain parking records efficiently.
+
+---
+
+## Data Structures & Algorithms Used
 
 This project implements the following core concepts:
-Data Structures:
 
-Stack (Array-based):
-Used as the main parking structure to store vehicles currently parked in the lot. It follows the Last-In, First-Out (LIFO) principle, meaning the most recently parked vehicle is the first to be removed.
+### Data Structures:
 
-Queue (Array-based):
-Used for the waiting line when the parking lot reaches maximum capacity. It follows the First-In, First-Out (FIFO) principle, ensuring fairness in vehicle entry.
+- **Linked List**  
+  Used to manage the list of parked vehicles dynamically.
 
-Array (History Storage):
-Used to store completed parking transactions such as plate number, vehicle type, parking duration, and total payment.
+- **Queue**  
+  Used for vehicle entry processing in first-come, first-served order.
 
-Algorithms:
+- **Stack**  
+  Used to maintain parking history and recently exited vehicles.
 
-Linear Search:
-Used to locate vehicles in both the parking stack and waiting queue based on plate number.
+---
 
-Bubble Sort:
-Implemented to sort transaction history based on total payment or number of hours for better data organization and analysis.
+### Algorithms:
 
-Additional Features
-User Authentication (File Handling):
-Allows users to register and log in using credentials stored in a text file.
+- **Linear Search**  
+  Used to locate vehicles by plate number.
 
-Automated Billing System:
-Calculates parking fees based on duration and vehicle type (Car or Motorcycle).
+- **Bubble Sort**  
+  Used to sort vehicle records for organized display.
 
-Receipt Generation:
-Displays a formatted receipt in the console and saves it into a file (receipt.txt) for record keeping.
+---
 
-Graph Visualization:
-Provides a simple ASCII-based visualization of total earnings.
+## How to Compile and Run
 
-How to Compile and Run
 To run this application, you need a standard C compiler (like GCC) installed on your system.
 
-Steps:
+1. Clone this repository or download the `parkinglotmanagementsystem.c` file.
 
-Save the file as:
-parkinglotmanagementsystem.c
-Open your terminal or command prompt.
+2. Open your terminal or command prompt and navigate to the folder containing the file.
 
-Navigate to the folder where the file is located:
-cd "c:\Users\Admin\Desktop\"
+3. Compile the code using the following command:
 
-Compile the program:
+```bash
 gcc parkinglotmanagementsystem.c -o parkinglotmanagementsystem
-
-Run the program:
-parking_app or if does not work use this command instead  parkinglotmanagementsystem
